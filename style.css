@@ -1,0 +1,190 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", serif;
+}
+
+/* navbar */
+.navbar-nav{
+	margin-right: 0 !important;
+	padding-right: 100px;
+}
+.navbar{
+	background-color: #003f5c;
+	color: #fff !important;
+}
+.nav-item a{
+	color: #fff !important;
+}
+.nav-item {
+	padding-left: 10px;
+	text-align: center;
+}
+
+.nav-item::after{
+	content:'';
+	width: 10%;   
+	height:2px;
+	display:block;
+	margin:auto;
+}
+
+.nav-item:hover::after{
+	transition:0.5s;
+	background:#809bce;
+	width:100%;
+}
+
+.navbar-brand{
+	color: #fff !important;
+	padding-left: 10px;
+}
+#navbar button{
+	color: #fff !important;
+}
+
+/* banner */
+
+#banner-container{
+	background-color: #003f5c;
+	color: #fff !important;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+#banner-row img{
+	max-width: 65%;
+	height: auto;
+	display: block;
+	padding-left: 30px;
+}
+
+#banner-row a{
+	background-color: #fff !important;
+	color: #000 !important;
+	border: none;
+	margin-left: 20px;
+	margin-top: 20px; 
+}
+
+#banner-row h3,p{
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+#banner-col{
+	padding-left: 20px;
+}
+/* service */
+#service{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#service h1{
+	padding-bottom: 70px;
+}
+
+/* about us */
+
+#about{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+#about h1{
+	padding-bottom: 70px;
+}
+#about-col ul{
+	padding-top: 50px;
+	padding-left: 50px;
+}
+#about-col ul li{
+	padding-top: 15px;
+}
+
+/* products */
+#product{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#product h1{
+	padding-bottom: 70px;
+}
+#product-col2 ul{
+	padding-top: 90px;
+}
+
+#product-col2 ul li{
+	padding-top: 15px;
+}
+/* footer */
+.mb-3{
+	padding-top: 10px;
+}
+
+.fortrice{
+	font-size: 30px;
+}
+
+.contactbtn {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #0c0c0c;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
+.contactbtn::after,
+.contactbtn::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: 0.5s ease-out;
+    background-color: #809bce;
+}
+.contactbtn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+.contactbtn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+.contactbtn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+.contactbtn:hover {
+    color: #fff;
+}
+.contactbtn:active {
+    filter: brightness(0.7);
+    transform: scale(0.98);
+}
+
+@media only screen and (max-width:960px)
+{
+	.navbar-brand{
+		padding-left:0;
+	}
+}
+@media only screen and (max-width:760px)
+{
+	#banner-row img{
+		padding-top:20px;
+	}
+	.social-col{
+		width: 33%;
+	}
+}
